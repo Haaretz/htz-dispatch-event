@@ -1,6 +1,6 @@
 {
   "name": "htz-dispatch-event",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A utility module for firing synethsized events",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
