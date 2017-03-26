@@ -5,14 +5,27 @@ module.exports = {
     "ecmaVersion": 6,
     "sourceType": "module",
   },
+  "plugins": ["mocha"],
   "env": {
     "es6": true,
     "node": true,
     "browser": true
   },
   "rules": {
+    "prefer-arrow-callback": 0,
+    "func-names": 0,
     "import/no-unresolved": 0,
-    "brace-style": [2, "stroustrup", { "allowSingleLine": true  }],
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never",
+    }],
+    "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
     /* Warn about long line */
     "max-len": [1, 100, 2],
     /* Warn about use of console */
@@ -27,8 +40,9 @@ module.exports = {
     "no-use-before-define": [2, "nofunc"],
     /* Warn when referencing an undefined variable */
     "no-undef": [1],
+    "no-trailing-spaces":0,
     /* Forbid expressions that are never used */
-    "no-unused-expressions": [2, { allowShortCircuit: true, allowTernary: true  }],
+    "no-unused-expressions": [2, {allowShortCircuit: true, allowTernary: true}],
     /* Warn when declaring a variable without using it */
     "no-unused-vars": [1, {"vars": "local", "args": "none"}],
     "no-warning-comments": [1, {"terms": ["fixme", "todo"], "location": "start"}],
@@ -37,5 +51,12 @@ module.exports = {
       "requireParamDescription": false,
       "requireReturnDescription": false
     }],
-  },
-}
+    /* disallow certain syntax forms */
+    'no-restricted-syntax': [
+      2,
+      'DebuggerStatement',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  }
+};
