@@ -1,6 +1,6 @@
 {
   "name": "htz-dispatch-event",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A utility module for firing synethsized events",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "update": "ncu",
-    "build": "npm run build:umd && npm run build:esm && npm run build:esnext",
+    "build": "npm run build:umd && npm run build:esnext",
     "build:esm": "tsc -p tsconfig.esm-build.json",
     "build:esnext": "tsc -p tsconfig.esnext-build.json",
     "build:umd": "cross-env NODE_ENV=production webpack -p --progress --display-error-details --color",
@@ -33,9 +33,7 @@
     "coverage:report": "nyc report --reporter=html"
   },
   "main": "dist/htz-dispatch-event.min.js",
-  "jsnext:main": "dist/esm/index.js",
-  "module": "dist/esm/index.js",
-  "typings": "dist/esm/index.d.ts",
+  "typings": "typings/index.d.ts",
   "devDependencies": {
     "@types/chai": "^3.4.34",
     "@types/mocha": "^2.2.39",

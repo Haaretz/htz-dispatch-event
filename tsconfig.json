@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "module": "es6",
-    "allowJs": true,
-    "target": "es6",
-    "experimentalDecorators": true,
-    "moduleResolution":"node",
+    "allowJs": false,
+    "declaration": true,
+    "declarationDir": "./typings",
     "emitDecoratorMetadata": true,
-    "noEmitHelpers": true,
+    "experimentalDecorators": true,
     "importHelpers":true,
-    "sourceMap": true
+    "module": "es6",
+    "moduleResolution":"node",
+    "noEmitHelpers": true,
+    "sourceMap": true,
+    "target": "es5"
   },
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,

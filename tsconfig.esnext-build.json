@@ -4,6 +4,7 @@
     "module": "es6",
     "allowJs":false,
     "declaration": true,
+    "declarationDir": "typings",
     "allowSyntheticDefaultImports": true,
     "outDir": "dist/esnext",
     "target": "es2017",
