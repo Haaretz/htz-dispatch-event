@@ -1,6 +1,6 @@
 {
   "name": "htz-dispatch-event",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A utility module for firing synethsized events",
   "license": "MIT",
   "repository": {
@@ -32,7 +32,7 @@
     "coverage": "nyc npm t",
     "coverage:report": "nyc report --reporter=html"
   },
-  "main": "dist/htz-dispatch-event.min.js",
+  "main": "dist/htzDispatchEvent.min.js",
   "typings": "typings/index.d.ts",
   "devDependencies": {
     "@types/chai": "^3.4.34",
