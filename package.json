@@ -102,7 +102,7 @@
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-webpack": "^0.7.0",
-    "node-sass": "^4.5.0",
+    "node-sass": "^7.0.0",
     "npm-check-updates": "^2.8.10",
     "nyc": "^10.1.2",
     "phantomjs-prebuilt": "^2.1.14",
